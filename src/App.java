@@ -1,6 +1,6 @@
 public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println(nextPrime(1190));
+    public static void main(String[] args) {
+        System.out.println(enumber(100));
     }
     public static int nextPrime(int n) {
         for (int i = n + 1; true; i++) {
@@ -17,4 +17,10 @@ public class App {
         }
         return true;
     }   
+    public static double enumber(double n){
+        double x=1/n;
+        x=x+1;
+        return Math.pow(x, n);
+    }
+
 }
