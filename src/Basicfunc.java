@@ -1,4 +1,4 @@
-public class App {
+public class Basicfunc {
     public static void main(String[] args) {
         System.out.println(enumber(100));
     }
@@ -22,5 +22,6 @@ public class App {
         x=x+1;
         return Math.pow(x, n);
     }
+    
 
 }
