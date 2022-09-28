@@ -1,6 +1,8 @@
+import java.util.ArrayList;
+
 public class Basicfunc {
     public static void main(String[] args) {
-        System.out.println(fib(8));
+        System.out.println(primefactor(662790));
     }
     public static int nextPrime(int n) {
         for (int i = n + 1; true; i++) {
@@ -37,5 +39,14 @@ public class Basicfunc {
             return y;
         }
     }
-
+    
+    public static String primefactor(int n){
+        ArrayList<Integer> john = new ArrayList();
+        for(int z=n-1;z>1;z--){
+            if(n%z==0){
+                john.add(z);
+            }
+        }
+        return john.toString();
+    }
 }
