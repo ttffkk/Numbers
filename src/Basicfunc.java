@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Basicfunc {
     public static void main(String[] args) {
-        System.out.println(primefactor(662790));
+        System.out.println(tilecalculator(11,11,6.0, 1,1));
     }
     public static int nextPrime(int n) {
         for (int i = n + 1; true; i++) {
@@ -39,7 +39,11 @@ public class Basicfunc {
             return y;
         }
     }
-    
+    public static double tilecalculator(int x, int y, double price, int tlength,int twidth){
+        double tiles=(x*y)/(tlength*twidth);
+        double price2=tiles*price;
+        return price2;
+    }
     public static String primefactor(int n){
         ArrayList<Integer> john = new ArrayList();
         for(int z=n-1;z>1;z--){

@@ -8,7 +8,6 @@ class gui{
        frame.setSize(300,300);
 
        JPanel panel = new JPanel();
-       JPanel plen = new JPanel();
        JTextArea textArea = new JTextArea();
        textArea.setBounds(50, 100, 200, 30);
        JButton button = new JButton("Nächste Primzahl");
@@ -16,15 +15,14 @@ class gui{
         JButton button3 = new JButton("Fibonacci");
         JButton button4 = new JButton("Primfaktoren");
         
-       panel.add(button);
-        panel.add(button2);
-        panel.add(button3);
-        panel.add(button4);
-        plen.add(textArea);
+       panel.add(button, BorderLayout.NORTH);
+        panel.add(button2, BorderLayout.WEST);
+        panel.add(button3, BorderLayout.EAST);
+        panel.add(button4, BorderLayout.SOUTH);
+        panel.add(textArea, BorderLayout.CENTER);
         textArea.setBounds(50, 100, 200, 30);
-        panel.setLayout(new FlowLayout());
+        panel.setLayout(new BorderLayout(20,15));
         frame.add(panel);
-        frame.add(plen);
         frame.setVisible(true);
     }
 }
