@@ -1,8 +1,8 @@
 import java.util.ArrayList;
-
+import java.time.*;
 public class Basicfunc {
     public static void main(String[] args) {
-        System.out.println(tilecalculator(11,11,6.0, 1,1));
+        System.out.println(alarm(20000));
     }
     public static int nextPrime(int n) {
         for (int i = n + 1; true; i++) {
@@ -52,5 +52,14 @@ public class Basicfunc {
             }
         }
         return john.toString();
+    }
+    public static boolean alarm(long n){
+        long x=System.currentTimeMillis();
+        long y=x+n;
+        while(x<y){
+        System.out.println(x);
+        x=System.currentTimeMillis();
+        }
+        return true;
     }
 }
