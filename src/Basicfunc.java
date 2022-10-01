@@ -53,6 +53,13 @@ public class Basicfunc {
         }
         return john.toString();
     }
+    public int convtime(int h,int min, int sec){
+        int time=0;
+        time=time+h*3600;
+        time=time+min*60;
+        time=time+sec;
+        return time;
+    }
     public static boolean alarm(long n){
         long x=System.currentTimeMillis();
         long y=x+n;
