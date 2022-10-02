@@ -5,7 +5,7 @@ class gui{
     public static void main(String args[]){
        JFrame frame = new JFrame("Basic Math Functions");
        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-       frame.setSize(300,300);
+       frame.setSize(1024,300);
 
        JPanel panel = new JPanel();
        JTextArea textArea = new JTextArea();
