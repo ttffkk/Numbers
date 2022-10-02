@@ -14,14 +14,13 @@ class gui{
        JButton button2 = new JButton("e^x");
         JButton button3 = new JButton("Fibonacci");
         JButton button4 = new JButton("Primfaktoren");
-        
+        panel.setLayout(new BorderLayout(20,15));
        panel.add(button, BorderLayout.NORTH);
         panel.add(button2, BorderLayout.WEST);
         panel.add(button3, BorderLayout.EAST);
         panel.add(button4, BorderLayout.SOUTH);
         panel.add(textArea, BorderLayout.CENTER);
         textArea.setBounds(50, 100, 200, 30);
-        panel.setLayout(new BorderLayout(20,15));
         frame.add(panel);
         frame.setVisible(true);
     }
